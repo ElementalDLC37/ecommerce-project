@@ -1,0 +1,41 @@
+<header>
+  <div class="header-up">
+    <a class="logo-anchor" href=""><img src="logo.png" alt="" /></a>
+    <div class="search-container">
+      <mat-icon fontIcon="search" />
+      <input type="text" placeholder="Pesquisar" />
+    </div>
+    <button
+      class="header-up-menu-mobile-button"
+      style="background-color: transparent; border: 0"
+    >
+      <mat-icon
+        fontIcon="menu"
+        style="font-size: 42px; width: 100%; height: 100%"
+      />
+    </button>
+  </div>
+  <div class="header-down">
+    <button
+      class="header-down-menu-mobile-button"
+      style="background-color: transparent; border: 0"
+      (click)="changeHiddenDownMenu()"
+    >
+      <mat-icon
+        fontIcon="menu"
+        style="font-size: 36px; width: 100%; height: 100%"
+      />
+      <h1>Páginas</h1>
+    </button>
+    <ul class="header-down-menu" *ngIf="hiddenDownMenu">
+      <li><a href="">Home</a></li>
+      <li><a href="">Area 2</a></li>
+      <li><a href="">Area 3</a></li>
+      <li><a href="">Area 4</a></li>
+      <li><a href="">Area 5</a></li>
+      <li><a href="">Area 6</a></li>
+      <li><a href="">Area 7</a></li>
+    </ul>
+    <div></div>
+  </div>
+</header>
