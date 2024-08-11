@@ -1,0 +1,15 @@
+#latest-brands-main {
+  gap: 0.4rem;
+
+  .latest-brand-item {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+
+    img {
+      padding: 0.6rem;
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+#painel-with-ad {
+  display: flex;
+  flex-direction: column;
+
+  .painel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 500;
+
+    .custom-carousel {
+      min-width: 100%;
+      object-fit: cover;
+      object-position: right;
+
+      .p-carousel-content {
+        overflow: hidden;
+      }
+
+      /* Estilizar as setas de navegação */
+      .p-carousel-prev,
+      .p-carousel-next {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        z-index: 10;
+      }
+
+      .p-carousel-prev {
+        position: absolute;
+        left: 0;
+      }
+
+      .p-carousel-next {
+        position: absolute !important;
+        right: 0;
+      }
+
+      /* Personalizar o item dentro do carousel */
+      .p-carousel-item {
+        img {
+          height: 200px;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .ad {
+    padding: 1rem;
+
+    img {
+      height: 200px;
+      min-width: 100%;
+      object-fit: cover;
+    }
+  }
+}

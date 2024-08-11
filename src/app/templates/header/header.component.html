@@ -5,29 +5,29 @@
       <mat-icon fontIcon="search" />
       <input type="text" placeholder="Pesquisar" />
     </div>
-    <button
-      class="header-up-menu-mobile-button"
-      style="background-color: transparent; border: 0"
-    >
-      <mat-icon
-        fontIcon="menu"
-        style="font-size: 42px; width: 100%; height: 100%"
-      />
-    </button>
+    <div class="header-up-button-container">
+      <button
+        class="header-up-button"
+        style="background-color: transparent; border: 0"
+      >
+        <mat-icon
+          fontIcon="shopping_cart"
+          style="font-size: 38px; width: 100%; height: 100%"
+        />
+      </button>
+      <button
+        class="header-up-button"
+        style="background-color: transparent; border: 0"
+      >
+        <mat-icon
+          fontIcon="menu"
+          style="font-size: 42px; width: 100%; height: 100%"
+        />
+      </button>
+    </div>
   </div>
   <div class="header-down">
-    <button
-      class="header-down-menu-mobile-button"
-      style="background-color: transparent; border: 0"
-      (click)="changeHiddenDownMenu()"
-    >
-      <mat-icon
-        fontIcon="menu"
-        style="font-size: 36px; width: 100%; height: 100%"
-      />
-      <h1>Páginas</h1>
-    </button>
-    <ul class="header-down-menu" *ngIf="hiddenDownMenu">
+    <ul class="header-down-menu">
       <li><a href="">Home</a></li>
       <li><a href="">Area 2</a></li>
       <li><a href="">Area 3</a></li>
@@ -36,6 +36,5 @@
       <li><a href="">Area 6</a></li>
       <li><a href="">Area 7</a></li>
     </ul>
-    <div></div>
   </div>
 </header>

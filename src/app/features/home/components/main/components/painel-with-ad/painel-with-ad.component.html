@@ -1,0 +1,14 @@
+<div id="painel-with-ad">
+  <div class="painel">
+    <igx-carousel #carousel>
+      <igx-slide *ngFor="let product of products">
+        <div class="image-container">
+          <img [src]="product.image" />
+        </div>
+      </igx-slide>
+    </igx-carousel>
+  </div>
+  <div class="ad">
+    <img src="ad.jpg" alt="" />
+  </div>
+</div>

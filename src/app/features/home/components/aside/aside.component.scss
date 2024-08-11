@@ -1,37 +1,47 @@
 .lateral {
   width: 100%;
-  background-color: #197bbd;
 
   .lateral-menu {
     display: flex;
     list-style: none;
     font-weight: 500;
     overflow-x: auto;
+    background-color: black;
 
     li {
-      margin: 0.8rem;
+      margin: 0.8rem 0.2rem;
+
       a {
         word-wrap: nowrap;
         white-space: nowrap;
+        text-decoration: none;
+        color: white;
         padding: 1rem;
       }
     }
   }
 
   .for-you {
-    width: 100%;
-    background: #cf5c36;
+    background: white;
+    margin: 1rem 5rem;
+    border-radius: 1rem;
+    padding: 1rem 0.5rem;
 
     .for-you-header {
-      background-color: white;
       display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-left: 6px solid black;
+      padding: 0.5rem 0;
+      align-items: center;
 
       h1 {
-        color: #cf5c36;
-        font-size: large;
-        padding: 0.8rem 0.5rem;
-        font-weight: 500;
-        letter-spacing: 1px;
+        margin-left: 0.4rem;
+        display: flex;
+        align-items: center;
+        font-size: small;
+        font-weight: 600;
+        gap: 0.2rem;
       }
     }
 
@@ -40,19 +50,21 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 0.5rem;
+        margin: 0 auto;
 
         .for-you-img-apresentation {
           display: flex;
           width: 100%;
 
           img {
-            width: 240px;
+            width: 100px;
             margin: 0 auto;
           }
 
           .its-new {
             position: absolute;
-            font-size: small;
+            font-size: x-small;
             font-weight: 700;
             background-color: black;
             color: white;
@@ -71,8 +83,14 @@
             background: white;
             border-radius: 5px;
             outline: 0;
-            border: 1px solid black;
-            padding: 0.5rem;
+            padding: 0.2rem;
+            align-items: center;
+
+            mat-icon {
+              font-size: medium !important;
+              height: min-content;
+              width: min-content;
+            }
           }
           .for-you-like-button {
           }
@@ -89,8 +107,19 @@
         align-items: center;
 
         h1 {
+          font-weight: 700;
+          margin-top: 0.4rem;
+          font-size: medium;
         }
+
         .stars {
+          margin-top: 0.4rem;
+
+          mat-icon {
+            font-size: large !important;
+            height: min-content;
+            width: min-content;
+          }
         }
         .price {
           display: flex;
@@ -99,37 +128,48 @@
 
           .current-price {
             font-weight: 700;
-            font-size: larger;
+            font-size: medium;
           }
 
           .last-price {
             font-weight: 500;
-            font-size: medium;
+            font-size: small;
             text-decoration: line-through;
           }
         }
 
         .time {
+          margin-top: 0.8rem;
           display: flex;
-          align-items: center;
-          justify-content: space-between;
+          align-items: start;
+          justify-content: center;
           width: 100%;
 
           div {
             text-align: center;
+            width: 50px;
 
             div {
-              font-size: x-large;
+              font-size: large;
               font-weight: 500;
+              width: min-content;
+              margin: 0 auto;
               background-color: rgba(0, 0, 0, 0.2);
+              padding: 0.4rem;
+              border-radius: 0.6rem;
             }
+
             h3 {
-              font-size: small;
+              font-size: x-small;
+              margin-top: 0.4rem;
             }
           }
 
           .time-double-dot {
             flex: 0;
+            height: 30px;
+            display: flex;
+            align-items: center;
           }
         }
       }
@@ -137,18 +177,26 @@
   }
 
   .services {
-    width: 100%;
+    background: white;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1rem 0.5rem;
 
     .services-header {
-      background-color: white;
       display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-left: 6px solid black;
+      padding: 0.5rem 0;
+      align-items: center;
 
       h1 {
-        color: #cf5c36;
-        font-size: large;
-        padding: 0.8rem 0.5rem;
-        font-weight: 500;
-        letter-spacing: 1px;
+        margin-left: 0.4rem;
+        display: flex;
+        align-items: center;
+        font-size: small;
+        font-weight: 600;
+        gap: 0.2rem;
       }
     }
 
@@ -163,16 +211,21 @@
           display: flex;
           align-items: center;
           padding: 0.5rem 0;
+          gap: 0.4rem;
 
           mat-icon {
+            font-size: x-large !important;
+            height: min-content;
+            width: min-content;
           }
+
           div {
             h5 {
-              font-size: large;
+              font-size: medium;
               font-weight: 500;
             }
             p {
-              font-size: small;
+              font-size: x-small;
             }
           }
         }
@@ -181,33 +234,50 @@
   }
 
   .comments {
+    background: white;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1rem 0.5rem;
+
     .comments-header {
-      background-color: white;
       display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-left: 6px solid black;
+      padding: 0.5rem 0;
+      align-items: center;
 
       h1 {
-        color: #cf5c36;
-        font-size: large;
-        padding: 0.8rem 0.5rem;
-        font-weight: 500;
-        letter-spacing: 1px;
+        margin-left: 0.4rem;
+        display: flex;
+        align-items: center;
+        font-size: small;
+        font-weight: 600;
+        gap: 0.2rem;
       }
     }
 
     div {
+      display: flex;
+      flex-direction: column;
+
       .comment-item {
         mat-icon {
+          font-size: xx-large !important;
+          height: min-content;
+          width: min-content;
           text-align: center;
         }
+
         div {
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 0.8rem;
+          gap: 0rem;
 
           .comment {
             text-align: center;
-            font-size: large;
+            font-size: small;
             font-weight: 500;
             font-style: italic;
             width: 80%;
